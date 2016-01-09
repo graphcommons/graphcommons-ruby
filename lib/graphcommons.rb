@@ -4,7 +4,7 @@ require 'rest-client'
 require 'json'
 require 'pp'
 
-module GraphCommons
+module Graphcommons
 
   class APIError < RuntimeError
   end
@@ -49,7 +49,7 @@ module GraphCommons
     end
 
     def self.check_key
-      raise GraphCommons::APIError.new("API key not set\nHint: use GraphCommons::API.set_key method or GRAPHCOMMONS_API_KEY environment variable.") unless @@apikey and @@apikey.length > 3
+      raise Graphcommons::APIError.new("API key not set\nHint: use Graphcommons::API.set_key method or GRAPHCOMMONS_API_KEY environment variable.") unless @@apikey and @@apikey.length > 3
     end
 
     def self.verbose
@@ -74,7 +74,7 @@ module GraphCommons
           code = match.to_s.gsub(/\D/,"")
           error = ["Not found","Server error"][code[0].to_i-4]+" (#{code})\nURI: #{uri}"
           error += "\nQUERY: #{query.to_json}" if query.any?
-          raise GraphCommons::APIError.new(error)
+          raise Graphcommons::APIError.new(error)
         else
           return data
         end
