@@ -39,7 +39,7 @@ module GraphCommons
       RestClient.put(uri,query.to_json,:authentication=>@@apikey,:content_type=>"application/json") {|data| self._respond data, uri, query}
     end
 
-    def self.set_api_key key
+    def self.set_key key
       if @@apikey == key
         return false
       else
@@ -48,8 +48,8 @@ module GraphCommons
       end
     end
 
-    def self.check_api_key
-      raise GraphCommons::APIError.new("API key not set\nHint: use GraphCommons::API.set_api_key method or GRAPHCOMMONS_API_KEY environment variable.") unless @@apikey and @@apikey.length > 3
+    def self.check_key
+      raise GraphCommons::APIError.new("API key not set\nHint: use GraphCommons::API.set_key method or GRAPHCOMMONS_API_KEY environment variable.") unless @@apikey and @@apikey.length > 3
     end
 
     def self.verbose
@@ -82,7 +82,7 @@ module GraphCommons
     end
 
     def self._gd endpoint, options
-      self.check_api_key
+      self.check_key
       ep = endpoint.to_s.gsub /(^\/|\/$)/, ""
       options[:query] = "*" if (!options.has_key?(:query) or !options.has_key?("query")) and ep.match(/search/)
       id = options.delete :id if options.has_key? :id
@@ -94,7 +94,7 @@ module GraphCommons
     end
 
     def self._pp endpoint, options
-      self.check_api_key
+      self.check_key
       ep = endpoint.to_s.gsub /(^\/|\/$)/, ""
       id = options.delete :id if options.has_key? :id
       id = options.delete "id" if options.has_key? "id"
