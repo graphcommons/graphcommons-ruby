@@ -9,7 +9,7 @@ Ruby wrapper for [Graphcommons API](http://graphcommons.github.io/api-v1/ "API r
 
 > Graph Commons provides a simple REST API to programmatically make network maps (graphs) and integrate graphs into your applications. You can use our API to access Graph Commons API endpoints, which can get information on various graphs, nodes, and edges on the platform.
 > 
-> To get started, sign up to Graph Commons and get your developer key, which will be used for authentication in your API calls.
+> To get started, [sign up to Graph Commons and get your developer key](https://graphcommons.com/me/edit "graphcommons.com"), which will be used for authentication in your API calls.
 
 ## Installation
 ```
