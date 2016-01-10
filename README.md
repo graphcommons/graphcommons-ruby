@@ -35,5 +35,5 @@ Then require the gem and you're good to go.
 => {"msg"=>"Working"} 
 ```
 
-Alternatively, you can use the `Graphcommons::API.set_key` method.
+Alternatively, you can use the `Graphcommons::API.set_key` method. Please refer to the [docs](http://www.rubydoc.info/gems/graphcommons "rubydoc.info") for more information.
 
