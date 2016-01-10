@@ -3,6 +3,10 @@ Ruby wrapper for Graphcommons API.
 
 More info at: [http://graphcommons.github.io/api-v1/](http://graphcommons.github.io/api-v1/ "API reference")
 
+**Example** [metagraph](https://github.com/graphcommons/metagraph "Source code")
+
+**Docs** [rubydoc.info](http://www.rubydoc.info/gems/graphcommons "Documentation")
+
 ## Installation
 ```
 $ gem install graphcommons
