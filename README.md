@@ -1,6 +1,7 @@
 
-[![version 0.0.5](https://img.shields.io/badge/version-0.0.5-gray.svg?style=flat-square)](https://rubygems.org/gems/graphcommons)
+[![version 0.0.5](https://img.shields.io/badge/version-0.0.5-white.svg?style=flat-square)](https://rubygems.org/gems/graphcommons)
 [![GPLv3 License](https://img.shields.io/badge/license-GPLv3-green.svg?style=flat-square)](https://github.com/graphcommons/graphcommons-ruby/raw/master/LICENSE)
+
 # graphcommons-ruby
 Ruby wrapper for [Graphcommons API](http://graphcommons.github.io/api-v1/ "API reference")
 
