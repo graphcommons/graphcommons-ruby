@@ -4,7 +4,12 @@ require 'rest-client'
 require 'json'
 require 'pp'
 
-# Ruby wrapper for Graphcommons API. 
+# Ruby wrapper for Graphcommons REST API that is used
+# to programmatically make network maps (graphs) and integrate graphs into your
+# applications. 
+#
+# To get started, sign up to Graph Commons and get your developer key, which
+# will be used for authentication in your API calls.
 #
 # More info at: http://graphcommons.github.io/api-v1/
 
@@ -27,7 +32,9 @@ module Graphcommons
     true
   end
 
-  # Custom error class for *Graphcommons API*.
+  # Custom error class for Graphcommons API.
+  #
+  # Set +Graphcommons.verbose+ to +true+ in order to get stack trace.
   class APIError < RuntimeError
     # :nodoc:
     def backtrace
@@ -76,7 +83,9 @@ module Graphcommons
     # Sets API key. 
     #
     # Returns +true+ if key is changed, +false+ if not changed, raises APIError
-    # if key argument fails /^sk_.{22}$/ test.
+    # if key argument fails /^sk_.\{22\}$/ test.
+    #
+    # To get the key, please visit https://graphcommons.com/me/edit
     def self.set_key key
       raise Graphcommons::APIError.new("Invalid API key\nKey should be in following format: sk_XXXXXXXXXXXXXXXXXXXXXX") unless key.match(/^sk_.{22}$/)
       if @@apikey == key
@@ -87,7 +96,7 @@ module Graphcommons
       end
     end
 
-    # Checks API key to /^sk_.{22}$/ test.
+    # Checks API key to /^sk_.\{22\}$/ test.
     # 
     # Returns +true+ or +false+.
     def self.check_key
@@ -192,6 +201,7 @@ module Graphcommons
     # Query for paths inside graph with *:id*.
     #
     # http://graphcommons.github.io/api-v1/#get-graphs-id-paths
+    # http://graphcommons.github.io/api-v1/#paths-endpoint-details
     def self.get_graph_paths id, options
       options[:id] = id
       self.get "graphs/paths", options
@@ -235,6 +245,7 @@ module Graphcommons
     # Query for paths inside hub with *:id*.
     #
     # http://graphcommons.github.io/api-v1/#get-hubs-id-paths
+    # http://graphcommons.github.io/api-v1/#paths-endpoint-details
     def self.get_hub_paths id, options
       options[:id] = id
       self.get "hubs/paths", options

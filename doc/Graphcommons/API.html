@@ -142,7 +142,7 @@
 
           
           <div class="method-source-code" id="check_key-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 93</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 95</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">check_key</span>
   <span class="ruby-identifier">@@apikey</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">@@apikey</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">3</span>
 <span class="ruby-keyword">end</span></pre>
@@ -176,7 +176,7 @@ href="API.html">API</a> response as ruby hash.</p>
 
           
           <div class="method-source-code" id="delete-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 56</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 58</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">delete</span> <span class="ruby-identifier">endpoint</span>, <span class="ruby-identifier">options</span> = {}
   <span class="ruby-identifier">uri</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">_gd</span>(<span class="ruby-identifier">endpoint</span>, <span class="ruby-identifier">options</span>)
   <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;DELETE #{uri}&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-constant">Graphcommons</span>.<span class="ruby-identifier">verbose</span>
@@ -212,7 +212,7 @@ response as ruby hash.</p>
 
           
           <div class="method-source-code" id="get-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 49</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 51</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-identifier">endpoint</span>, <span class="ruby-identifier">options</span> = {}
   <span class="ruby-identifier">uri</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">_gd</span>(<span class="ruby-identifier">endpoint</span>, <span class="ruby-identifier">options</span>)
   <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;GET #{uri}&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-constant">Graphcommons</span>.<span class="ruby-identifier">verbose</span>
@@ -248,7 +248,7 @@ response as ruby hash.</p>
 
           
           <div class="method-source-code" id="post-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 63</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 65</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">post</span> <span class="ruby-identifier">endpoint</span>, <span class="ruby-identifier">options</span> = {}
   <span class="ruby-identifier">uri</span>, <span class="ruby-identifier">query</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">_pp</span> <span class="ruby-identifier">endpoint</span>, <span class="ruby-identifier">options</span>
   <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;POST #{uri} #{query}&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-constant">Graphcommons</span>.<span class="ruby-identifier">verbose</span>
@@ -284,7 +284,7 @@ response as ruby hash.</p>
 
           
           <div class="method-source-code" id="put-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 70</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 72</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">put</span> <span class="ruby-identifier">endpoint</span>, <span class="ruby-identifier">options</span> = {}
   <span class="ruby-identifier">uri</span>, <span class="ruby-identifier">query</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">_pp</span> <span class="ruby-identifier">endpoint</span>, <span class="ruby-identifier">options</span>
   <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;PUT #{uri} #{query}&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-constant">Graphcommons</span>.<span class="ruby-identifier">verbose</span>
@@ -323,7 +323,7 @@ changed, raises <a href="APIError.html">APIError</a> if key argument fails
 
           
           <div class="method-source-code" id="set_key-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 80</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 82</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">set_key</span> <span class="ruby-identifier">key</span>
   <span class="ruby-identifier">raise</span> <span class="ruby-constant">Graphcommons</span><span class="ruby-operator">::</span><span class="ruby-constant">APIError</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;Invalid API key\nKey should be in following format: sk_XXXXXXXXXXXXXXXXXXXXXX&quot;</span>) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">key</span>.<span class="ruby-identifier">match</span>(<span class="ruby-regexp">/^sk_.{22}$/</span>)
   <span class="ruby-keyword">if</span> <span class="ruby-identifier">@@apikey</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">key</span>

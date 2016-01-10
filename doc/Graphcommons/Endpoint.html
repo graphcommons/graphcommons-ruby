@@ -159,7 +159,7 @@ href="http://graphcommons.github.io/api-v1/#delete-graphs-id">graphcommons.githu
 
           
           <div class="method-source-code" id="delete_graph-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 210</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 212</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">delete_graph</span> <span class="ruby-identifier">id</span>
   <span class="ruby-keyword">self</span>.<span class="ruby-identifier">delete</span> <span class="ruby-value">:graphs</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">id</span>
 <span class="ruby-keyword">end</span></pre>
@@ -195,7 +195,7 @@ href="http://graphcommons.github.io/api-v1/#get-graphs-id">graphcommons.github.i
 
           
           <div class="method-source-code" id="get_graph-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 173</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 175</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_graph</span> <span class="ruby-identifier">id</span>
   <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-value">:graphs</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">id</span>
 <span class="ruby-keyword">end</span></pre>
@@ -231,7 +231,7 @@ href="http://graphcommons.github.io/api-v1/#get-graphs-id-edges">graphcommons.gi
 
           
           <div class="method-source-code" id="get_graph_edges-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 187</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 189</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_graph_edges</span> <span class="ruby-identifier">id</span>, <span class="ruby-identifier">options</span>
   <span class="ruby-identifier">options</span>[<span class="ruby-value">:id</span>] = <span class="ruby-identifier">id</span>
   <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-string">&quot;graphs/edges&quot;</span>, <span class="ruby-identifier">options</span>
@@ -268,7 +268,7 @@ href="http://graphcommons.github.io/api-v1/#get-graphs-id-paths">graphcommons.gi
 
           
           <div class="method-source-code" id="get_graph_paths-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 195</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 197</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_graph_paths</span> <span class="ruby-identifier">id</span>, <span class="ruby-identifier">options</span>
   <span class="ruby-identifier">options</span>[<span class="ruby-value">:id</span>] = <span class="ruby-identifier">id</span>
   <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-string">&quot;graphs/paths&quot;</span>, <span class="ruby-identifier">options</span>
@@ -305,7 +305,7 @@ href="http://graphcommons.github.io/api-v1/#get-graphs-id-types">graphcommons.gi
 
           
           <div class="method-source-code" id="get_graph_types-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 180</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 182</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_graph_types</span> <span class="ruby-identifier">id</span>
   <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-string">&quot;graphs/types&quot;</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">id</span>
 <span class="ruby-keyword">end</span></pre>
@@ -341,7 +341,7 @@ href="http://graphcommons.github.io/api-v1/#get-hubs-id">graphcommons.github.io/
 
           
           <div class="method-source-code" id="get_hub-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 224</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 226</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_hub</span> <span class="ruby-identifier">id</span>
   <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-value">:hubs</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">id</span>
 <span class="ruby-keyword">end</span></pre>
@@ -378,7 +378,7 @@ href="http://graphcommons.github.io/api-v1/#get-hubs-id-graphs">graphcommons.git
 
           
           <div class="method-source-code" id="get_hub_graphs-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 246</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 248</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_hub_graphs</span> <span class="ruby-identifier">id</span>, <span class="ruby-identifier">options</span>
   <span class="ruby-identifier">options</span>[<span class="ruby-value">:id</span>] = <span class="ruby-identifier">id</span>
   <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-string">&quot;graphs/search&quot;</span>, <span class="ruby-identifier">options</span>
@@ -416,7 +416,7 @@ href="http://graphcommons.github.io/api-v1/#get-hubs-id-nodes">graphcommons.gith
 
           
           <div class="method-source-code" id="get_hub_nodes-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 254</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 256</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_hub_nodes</span> <span class="ruby-identifier">id</span>, <span class="ruby-identifier">options</span>
   <span class="ruby-identifier">options</span>[<span class="ruby-value">:id</span>] = <span class="ruby-identifier">id</span>
   <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-string">&quot;nodes/search&quot;</span>, <span class="ruby-identifier">options</span>
@@ -453,7 +453,7 @@ href="http://graphcommons.github.io/api-v1/#get-hubs-id-paths">graphcommons.gith
 
           
           <div class="method-source-code" id="get_hub_paths-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 238</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 240</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_hub_paths</span> <span class="ruby-identifier">id</span>, <span class="ruby-identifier">options</span>
   <span class="ruby-identifier">options</span>[<span class="ruby-value">:id</span>] = <span class="ruby-identifier">id</span>
   <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-string">&quot;hubs/paths&quot;</span>, <span class="ruby-identifier">options</span>
@@ -490,7 +490,7 @@ href="http://graphcommons.github.io/api-v1/#get-hubs-id-types">graphcommons.gith
 
           
           <div class="method-source-code" id="get_hub_types-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 231</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 233</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_hub_types</span> <span class="ruby-identifier">id</span>
   <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-string">&quot;hubs/types&quot;</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">id</span>
 <span class="ruby-keyword">end</span></pre>
@@ -526,7 +526,7 @@ href="http://graphcommons.github.io/api-v1/#get-nodes-id">graphcommons.github.io
 
           
           <div class="method-source-code" id="get_node-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 217</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 219</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_node</span> <span class="ruby-identifier">id</span>
   <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-value">:nodes</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">id</span>
 <span class="ruby-keyword">end</span></pre>
@@ -562,7 +562,7 @@ href="http://graphcommons.github.io/api-v1/#post-graphs">graphcommons.github.io/
 
           
           <div class="method-source-code" id="new_graph-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 166</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 168</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">new_graph</span> <span class="ruby-identifier">options</span>
   <span class="ruby-keyword">self</span>.<span class="ruby-identifier">post</span> <span class="ruby-value">:graphs</span>, <span class="ruby-identifier">options</span>
 <span class="ruby-keyword">end</span></pre>
@@ -596,7 +596,7 @@ href="http://graphcommons.github.io/api-v1/#get-status">graphcommons.github.io/a
 
           
           <div class="method-source-code" id="status-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 158</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 160</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">status</span>
   <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-value">:status</span>
 <span class="ruby-keyword">end</span></pre>
@@ -632,7 +632,7 @@ href="http://graphcommons.github.io/api-v1/#put-graphs-id">graphcommons.github.i
 
           
           <div class="method-source-code" id="update_graph-source">
-            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 203</span>
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 205</span>
 <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">update_graph</span> <span class="ruby-identifier">id</span>, <span class="ruby-identifier">options</span>
   <span class="ruby-keyword">self</span>.<span class="ruby-identifier">put</span> <span class="ruby-value">:graphs</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">id</span>, <span class="ruby-value">:graph=</span><span class="ruby-operator">&gt;</span> <span class="ruby-identifier">options</span>
 <span class="ruby-keyword">end</span></pre>
