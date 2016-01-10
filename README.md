@@ -1,11 +1,14 @@
 
 # graphcommons-ruby
 [![version: 0.0.5](https://img.shields.io/badge/version-0.0.5-lightgrey.svg?style=flat-square)](https://rubygems.org/gems/graphcommons)
-[![license: GPLv3](https://img.shields.io/badge/license-GPLv3-brightgreen.svg?style=flat-square)](https://www.gnu.org/licenses/gpl.txt)
-[![example: metagraph](https://img.shields.io/badge/example-metagraph-blue.svg?style=flat-square)](https://github.com/graphcommons/metagraph)
 [![docs: rubydoc.info](https://img.shields.io/badge/docs-rubydoc.info-red.svg?style=flat-square)](http://www.rubydoc.info/gems/graphcommons)
+[![example: metagraph](https://img.shields.io/badge/example-metagraph-blue.svg?style=flat-square)](https://github.com/graphcommons/metagraph)
+[![license: GPLv3](https://img.shields.io/badge/license-GPLv3-brightgreen.svg?style=flat-square)](https://www.gnu.org/licenses/gpl.txt)
 
-Ruby wrapper for [Graphcommons API](http://graphcommons.github.io/api-v1/ "API reference")
+Ruby wrapper for [Graphcommons API](http://graphcommons.github.io/api-v1/ "API reference"):
+
+> Graph Commons provides a simple REST API to programmatically make network maps (graphs) and integrate graphs into your applications. You can use our API to access Graph Commons API endpoints, which can get information on various graphs, nodes, and edges on the platform.
+> To get started, sign up to Graph Commons and get your developer key, which will be used for authentication in your API calls.
 
 ## Installation
 ```
