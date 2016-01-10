@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Graphcommons::Endpoint - RDoc Documentation</title>
+
+<link href="../fonts.css" rel="stylesheet">
+<link href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/navigation.js"></script>
+<script src="../js/search_index.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/searcher.js"></script>
+<script src="../js/darkfish.js"></script>
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../table_of_contents.html#pages">Pages</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="API.html">Graphcommons::API</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-delete_graph">::delete_graph</a>
+    
+    <li ><a href="#method-c-get_graph">::get_graph</a>
+    
+    <li ><a href="#method-c-get_graph_edges">::get_graph_edges</a>
+    
+    <li ><a href="#method-c-get_graph_paths">::get_graph_paths</a>
+    
+    <li ><a href="#method-c-get_graph_types">::get_graph_types</a>
+    
+    <li ><a href="#method-c-get_hub">::get_hub</a>
+    
+    <li ><a href="#method-c-get_hub_graphs">::get_hub_graphs</a>
+    
+    <li ><a href="#method-c-get_hub_nodes">::get_hub_nodes</a>
+    
+    <li ><a href="#method-c-get_hub_paths">::get_hub_paths</a>
+    
+    <li ><a href="#method-c-get_hub_types">::get_hub_types</a>
+    
+    <li ><a href="#method-c-get_node">::get_node</a>
+    
+    <li ><a href="#method-c-new_graph">::new_graph</a>
+    
+    <li ><a href="#method-c-status">::status</a>
+    
+    <li ><a href="#method-c-update_graph">::update_graph</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Graphcommons::Endpoint">
+  <h1 id="class-Graphcommons::Endpoint" class="class">
+    class Graphcommons::Endpoint
+  </h1>
+
+  <section class="description">
+    
+<p>Wrapper for general methods in the <a href="API.html">API</a>.</p>
+
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-delete_graph" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_graph</span><span
+            class="method-args">(id)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Delete graph with <strong>:id</strong>.</p>
+
+<p><a
+href="http://graphcommons.github.io/api-v1/#delete-graphs-id">graphcommons.github.io/api-v1/#delete-graphs-id</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="delete_graph-source">
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 210</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">delete_graph</span> <span class="ruby-identifier">id</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">delete</span> <span class="ruby-value">:graphs</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">id</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-get_graph" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_graph</span><span
+            class="method-args">(id)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get graph by <strong>:id</strong>.</p>
+
+<p><a
+href="http://graphcommons.github.io/api-v1/#get-graphs-id">graphcommons.github.io/api-v1/#get-graphs-id</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="get_graph-source">
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 173</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_graph</span> <span class="ruby-identifier">id</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-value">:graphs</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">id</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-get_graph_edges" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_graph_edges</span><span
+            class="method-args">(id, options)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get edges inside graph with <strong>:id</strong>.</p>
+
+<p><a
+href="http://graphcommons.github.io/api-v1/#get-graphs-id-edges">graphcommons.github.io/api-v1/#get-graphs-id-edges</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="get_graph_edges-source">
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 187</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_graph_edges</span> <span class="ruby-identifier">id</span>, <span class="ruby-identifier">options</span>
+  <span class="ruby-identifier">options</span>[<span class="ruby-value">:id</span>] = <span class="ruby-identifier">id</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-string">&quot;graphs/edges&quot;</span>, <span class="ruby-identifier">options</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-get_graph_paths" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_graph_paths</span><span
+            class="method-args">(id, options)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Query for paths inside graph with <strong>:id</strong>.</p>
+
+<p><a
+href="http://graphcommons.github.io/api-v1/#get-graphs-id-paths">graphcommons.github.io/api-v1/#get-graphs-id-paths</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="get_graph_paths-source">
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 195</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_graph_paths</span> <span class="ruby-identifier">id</span>, <span class="ruby-identifier">options</span>
+  <span class="ruby-identifier">options</span>[<span class="ruby-value">:id</span>] = <span class="ruby-identifier">id</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-string">&quot;graphs/paths&quot;</span>, <span class="ruby-identifier">options</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-get_graph_types" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_graph_types</span><span
+            class="method-args">(id)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get node and edge types inside graph with <strong>:id</strong>.</p>
+
+<p><a
+href="http://graphcommons.github.io/api-v1/#get-graphs-id-types">graphcommons.github.io/api-v1/#get-graphs-id-types</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="get_graph_types-source">
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 180</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_graph_types</span> <span class="ruby-identifier">id</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-string">&quot;graphs/types&quot;</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">id</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-get_hub" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_hub</span><span
+            class="method-args">(id)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get hub by <strong>:id</strong>.</p>
+
+<p><a
+href="http://graphcommons.github.io/api-v1/#get-hubs-id">graphcommons.github.io/api-v1/#get-hubs-id</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="get_hub-source">
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 224</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_hub</span> <span class="ruby-identifier">id</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-value">:hubs</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">id</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-get_hub_graphs" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_hub_graphs</span><span
+            class="method-args">(id, options)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a href="Search.html">Search</a> for graphs inside hub with
+<strong>:id</strong>.</p>
+
+<p><a
+href="http://graphcommons.github.io/api-v1/#get-hubs-id-graphs">graphcommons.github.io/api-v1/#get-hubs-id-graphs</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="get_hub_graphs-source">
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 246</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_hub_graphs</span> <span class="ruby-identifier">id</span>, <span class="ruby-identifier">options</span>
+  <span class="ruby-identifier">options</span>[<span class="ruby-value">:id</span>] = <span class="ruby-identifier">id</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-string">&quot;graphs/search&quot;</span>, <span class="ruby-identifier">options</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-get_hub_nodes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_hub_nodes</span><span
+            class="method-args">(id, options)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a href="Search.html">Search</a> for nodes inside  hub with
+<strong>:id</strong>.</p>
+
+<p><a
+href="http://graphcommons.github.io/api-v1/#get-hubs-id-nodes">graphcommons.github.io/api-v1/#get-hubs-id-nodes</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="get_hub_nodes-source">
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 254</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_hub_nodes</span> <span class="ruby-identifier">id</span>, <span class="ruby-identifier">options</span>
+  <span class="ruby-identifier">options</span>[<span class="ruby-value">:id</span>] = <span class="ruby-identifier">id</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-string">&quot;nodes/search&quot;</span>, <span class="ruby-identifier">options</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-get_hub_paths" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_hub_paths</span><span
+            class="method-args">(id, options)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Query for paths inside hub with <strong>:id</strong>.</p>
+
+<p><a
+href="http://graphcommons.github.io/api-v1/#get-hubs-id-paths">graphcommons.github.io/api-v1/#get-hubs-id-paths</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="get_hub_paths-source">
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 238</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_hub_paths</span> <span class="ruby-identifier">id</span>, <span class="ruby-identifier">options</span>
+  <span class="ruby-identifier">options</span>[<span class="ruby-value">:id</span>] = <span class="ruby-identifier">id</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-string">&quot;hubs/paths&quot;</span>, <span class="ruby-identifier">options</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-get_hub_types" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_hub_types</span><span
+            class="method-args">(id)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get node and edge types in hub with <strong>:id</strong>.</p>
+
+<p><a
+href="http://graphcommons.github.io/api-v1/#get-hubs-id-types">graphcommons.github.io/api-v1/#get-hubs-id-types</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="get_hub_types-source">
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 231</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_hub_types</span> <span class="ruby-identifier">id</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-string">&quot;hubs/types&quot;</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">id</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-get_node" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_node</span><span
+            class="method-args">(id)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get node by <strong>:id</strong>.</p>
+
+<p><a
+href="http://graphcommons.github.io/api-v1/#get-nodes-id">graphcommons.github.io/api-v1/#get-nodes-id</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="get_node-source">
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 217</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_node</span> <span class="ruby-identifier">id</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-value">:nodes</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">id</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-new_graph" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new_graph</span><span
+            class="method-args">(options)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Create new graph. Required options: <code>:name</code></p>
+
+<p><a
+href="http://graphcommons.github.io/api-v1/#post-graphs">graphcommons.github.io/api-v1/#post-graphs</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="new_graph-source">
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 166</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">new_graph</span> <span class="ruby-identifier">options</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">post</span> <span class="ruby-value">:graphs</span>, <span class="ruby-identifier">options</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-status" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">status</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get <a href="API.html">API</a> status. <a
+href="http://graphcommons.github.io/api-v1/#get-status">graphcommons.github.io/api-v1/#get-status</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="status-source">
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 158</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">status</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get</span> <span class="ruby-value">:status</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-update_graph" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update_graph</span><span
+            class="method-args">(id, options)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Modify attributes of graph with <strong>:id</strong>.</p>
+
+<p><a
+href="http://graphcommons.github.io/api-v1/#put-graphs-id">graphcommons.github.io/api-v1/#put-graphs-id</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="update_graph-source">
+            <pre><span class="ruby-comment"># File lib/graphcommons.rb, line 203</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">update_graph</span> <span class="ruby-identifier">id</span>, <span class="ruby-identifier">options</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">put</span> <span class="ruby-value">:graphs</span>, <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">id</span>, <span class="ruby-value">:graph=</span><span class="ruby-operator">&gt;</span> <span class="ruby-identifier">options</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://rdoc.rubyforge.org">RDoc</a> 4.1.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

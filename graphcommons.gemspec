@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'graphcommons'
-  s.version     = '0.0.1'
+  s.version     = '0.0.4'
   s.date        = '2016-01-09'
   s.summary     = "Ruby wrapper for Graphcommons API"
   s.description = "More info at: http://graphcommons.github.io/api-v1/"

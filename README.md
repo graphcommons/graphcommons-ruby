@@ -1,4 +1,4 @@
-# graphcommons
+# Graphcommons
 Ruby wrapper for Graphcommons API. 
 
 More info at: [http://graphcommons.github.io/api-v1/](http://graphcommons.github.io/api-v1/ "API reference")
@@ -10,10 +10,13 @@ $ gem install graphcommons
 
 ## Usage
 First, add your key as an environment variable:
+
 ```
 export GRAPHCOMMONS_API_KEY="XX_XXXXXXXXXXXXXXXXXXXXXX"
 ```
+
 Then require the gem and you're good to go.
+
 ```
 #irb
 
@@ -23,4 +26,6 @@ Then require the gem and you're good to go.
 :002 > Graphcommons::Endpoint.status
 => {"msg"=>"Working"} 
 ```
+
 Alternatively, you can use the `Graphcommons::API.set_key` method.
+
